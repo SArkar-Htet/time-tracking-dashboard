@@ -10,5 +10,27 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: $veryDarkBlue;
   font-family: 'Rubik', sans-serif;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-secondary {
+  color: $paleBlue;
+}
+
+.main {
+  height: 97vh;
+
+  h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer {
+  height: 3vh;
 }
