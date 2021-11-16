@@ -1,0 +1,61 @@
+.report__card {
+  padding-top: toRem(38);
+  background-repeat: no-repeat;
+  background-position: top toRem(-5) right toRem(20);
+
+  &--work {
+    background-color: $lightRedWork;
+    background-image: url("../../images/icon-work.svg");
+  }
+
+  &--play {
+    background-color: $softBlue;
+    background-image: url("../../images/icon-play.svg");
+  }
+
+  &--study {
+    background-color: $lightRedStu;
+    background-image: url("../../images/icon-study.svg");
+  }
+
+  &--exercise {
+    background-color: $limeGreen;
+    background-image: url("../../images/icon-exercise.svg");
+    background-position: top right toRem(20);
+  }
+
+  &--social {
+    background-color: $violet;
+    background-image: url("../../images/icon-social.svg");
+    background-position: top toRem(-12) right toRem(20);
+  }
+
+  &--self-care {
+    background-color: $softOrange;
+    background-image: url("../../images/icon-self-care.svg");
+    background-position: top toRem(-12) right toRem(20);
+  }
+
+  &__body {
+    background-color: $darkBlue;
+    border-radius: toRem(16);
+    padding: 32px 24px;
+  }
+
+  &__header {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.5;
+
+    .current-time {
+      font-size: 32px;
+      font-weight: 300;
+    }
+  }
+}

@@ -23,14 +23,19 @@ body {
 }
 
 .main {
-  height: 97vh;
+  // height: 97vh;
 
   h1, h2, p {
     margin: 0;
     padding: 0;
   }
+
+  .card {
+    border-radius: toRem(16);
+    overflow: hidden;
+  }
 }
 
 .footer {
-  height: 3vh;
+  // height: 3vh;
 }
