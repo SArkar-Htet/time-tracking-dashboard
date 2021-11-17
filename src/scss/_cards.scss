@@ -80,7 +80,7 @@
   }
 
   &__header {
-    font-size: 18px;
+    font-size: $font-normal;
     font-weight: 500;
   }
 
@@ -106,11 +106,11 @@
     }
 
     .current-time {
-      font-size: 32px;
+      font-size: $font-xl;
       font-weight: 300;
 
       @include breakpoint-up(medium) {
-        font-size: toRem(52);
+        font-size: $font-xxxl;
       }
     }
   }
@@ -119,7 +119,7 @@
     @include breakpoint-up(large) {
       flex-direction: column;
       align-items: flex-start;
-      margin-top: toRem(16);
+      margin-top: toRem(18);
     }
   }
 }

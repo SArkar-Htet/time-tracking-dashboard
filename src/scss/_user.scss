@@ -74,12 +74,12 @@
       }
       &__name {
         line-height: 1.5;
-        font-size: toRem(24); 
+        font-size: $font-lg; 
         font-weight: $font-light;
 
         @include breakpoint-up(medium) {
           line-height: 1.2;
-          font-size: toRem(37);
+          font-size: $font-xxl;
         }
       }
     }

@@ -18,7 +18,12 @@ $paleBlue: hsl(236, 100%, 87%);
 $white: hsl(0, 0%, 100%);
 
 // Typography
-$font-normal: 18px;
+$font-sm: toRem(12);
+$font-normal: toRem(18);
+$font-lg: toRem(24);
+$font-xl: toRem(32);
+$font-xxl: toRem(37);
+$font-xxxl: toRem(52);
 
 // Font Weight\
 $font-light: 300;
