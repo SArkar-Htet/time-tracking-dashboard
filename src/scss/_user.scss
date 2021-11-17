@@ -2,7 +2,7 @@
   .user {
     &-card {
       background-color: $darkBlue;
-      &__body {
+      &__profile {
         display: flex;
         align-items: center;
         gap: toRem(16);
@@ -11,32 +11,34 @@
         border-radius: toRem(16);
       } 
       
-      &__footer {
+      &__timeframe {
         padding: toRem(24);
-        &__list {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          list-style-type: none;
-        }
-
-        &__item {
-          display: inline-block;
-        }
-
-        &__link {
-          text-decoration: none;
-          color: $desaturatedBlue;
-          transition: all 200ms ease-in-out;
-
-          &--active {
-            color: $white;
+        .timeframe {
+          &__list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style-type: none;
           }
 
-          &:hover {
-            color: $white;
+          &__item {
+            display: inline-block;
+          }
+
+          &__link {
+            text-decoration: none;
+            color: $desaturatedBlue;
+            transition: all 200ms ease-in-out;
+
+            &--active {
+              color: $white;
+            }
+
+            &:hover {
+              color: $white;
+            }
           }
         }
       }
