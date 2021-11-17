@@ -12,6 +12,7 @@ body {
   padding: 0;
   background-color: $veryDarkBlue;
   font-family: 'Rubik', sans-serif;
+  line-height: 1.2;
 }
 
 .text-white {
@@ -23,7 +24,11 @@ body {
 }
 
 .main {
-  // height: 97vh;
+  @include breakpoint-up(medium) {
+    display: flex;
+    align-items: center;
+    height: 98vh;
+  }
 
   h1, h2, p {
     margin: 0;
@@ -37,5 +42,12 @@ body {
 }
 
 .footer {
-  // height: 3vh;
+  @include breakpoint-up(medium) {
+    height: 2vh;
+    // padding: toRem(2) 0;
+  }
+
+  // @include breakpoint-up(large) {
+  //   padding: 0;
+  // }
 }

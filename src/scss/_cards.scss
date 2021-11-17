@@ -3,37 +3,65 @@
   background-repeat: no-repeat;
   background-position: top toRem(-5) right toRem(20);
 
+  @include breakpoint-up(medium) {
+    padding-top: toRem(44);
+  }
+
   &--work {
     background-color: $lightRedWork;
     background-image: url("../../images/icon-work.svg");
+    
+    @include breakpoint-up(medium) {
+      grid-area: work;
+    }
   }
 
   &--play {
     background-color: $softBlue;
     background-image: url("../../images/icon-play.svg");
+
+    @include breakpoint-up(medium) {
+      grid-area: play;
+    }
   }
 
   &--study {
     background-color: $lightRedStu;
     background-image: url("../../images/icon-study.svg");
+
+    @include breakpoint-up(medium) {
+      grid-area: study;
+    }
   }
 
   &--exercise {
     background-color: $limeGreen;
     background-image: url("../../images/icon-exercise.svg");
     background-position: top right toRem(20);
+
+    @include breakpoint-up(medium) {
+      grid-area: exercise;
+    }
   }
 
   &--social {
     background-color: $violet;
     background-image: url("../../images/icon-social.svg");
     background-position: top toRem(-12) right toRem(20);
+
+    @include breakpoint-up(medium) {
+      grid-area: social;
+    }
   }
 
   &--self-care {
     background-color: $softOrange;
     background-image: url("../../images/icon-self-care.svg");
     background-position: top toRem(-12) right toRem(20);
+
+    @include breakpoint-up(medium) {
+      grid-area: self-care;
+    }
   }
 
   &__body {
@@ -74,9 +102,25 @@
     justify-content: space-between;
     line-height: 1.5;
 
+    @include breakpoint-up(large) {
+      line-height: 1.3;
+    }
+
     .current-time {
       font-size: 32px;
       font-weight: 300;
+
+      @include breakpoint-up(medium) {
+        font-size: toRem(52);
+      }
+    }
+  }
+
+  &__time {
+    @include breakpoint-up(large) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: toRem(16);
     }
   }
 }
