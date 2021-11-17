@@ -1,16 +1,19 @@
 
 let timeFrameSts = "weekly";
-const handleClick = (event) => {
-  const id = event.target.id;
-  timeFrameSts = id;
-  const reportCards = document.querySelectorAll(".report__card");
-  const timeFrames = document.querySelectorAll(".timeframe__link");
+const handleActive = (timeFrames, id) => {
   timeFrames.forEach(frame => {
     frame.classList.remove("timeframe__link--active");
     if (frame.id === id) {
       frame.classList.add("timeframe__link--active");
     }
   });
+}
+const handleClick = (event) => {
+  const id = event.target.id;
+  timeFrameSts = id;
+  const reportCards = document.querySelectorAll(".report__card");
+  const timeFrames = document.querySelectorAll(".timeframe__link");
+  handleActive(timeFrames, id);
   reportCards.forEach(card => {
     card.remove()
   });
