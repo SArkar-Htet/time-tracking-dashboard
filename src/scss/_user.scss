@@ -44,7 +44,7 @@
           &__link {
             text-decoration: none;
             color: $desaturatedBlue;
-            transition: all 200ms ease-in-out;
+            @include easeInOut(all, 200ms);
 
             &--active {
               color: $white;

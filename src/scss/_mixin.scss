@@ -18,6 +18,6 @@ $breakpoints-down: ("small": "39.9375em","medium": "63.9375em", "large": "74.937
 }
 
 // Transition
-@mixin  easeInOut($action, $dur) {
+@mixin easeInOut($action, $dur) {
   transition: $action $dur ease-in-out;
 }

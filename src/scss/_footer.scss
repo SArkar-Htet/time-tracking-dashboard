@@ -4,7 +4,7 @@
     text-align: center;
 
     a {
-      transition: all 200ms ease-in-out;
+      @include easeInOut(all, 200ms);
       &:hover {
         color: $paleBlue;
       }
