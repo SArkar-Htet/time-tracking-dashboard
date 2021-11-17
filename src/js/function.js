@@ -22,7 +22,7 @@ const handleClick = (event) => {
 }
 
 const getData = (timeFrameSts) => {
-  const data = "../../data.json";
+  const data = "./data.json";
 fetch(data)
   .then(response => response.json()) // accessing the API data as JSON
   .then(data => { // getting the data
