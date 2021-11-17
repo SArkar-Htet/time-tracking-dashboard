@@ -64,7 +64,7 @@
       border-radius: 50%;
 
       @include breakpoint-up(medium) {
-        width: 84px;
+        width: toRem(84);
       }
     }
 

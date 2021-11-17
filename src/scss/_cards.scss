@@ -69,7 +69,7 @@
 
     &__wrapper {
       background-color: inherit;
-      padding: 32px 24px;
+      padding: toRem(32) toRem(24);
       cursor: pointer;
       @include easeInOut(all, 200ms);
 
